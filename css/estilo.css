@@ -397,22 +397,24 @@ p {
 }
 /*--------------SECTION ABOUT (OTRAS PAGES)------------------*/
 #about .about {
-	flex-direction: column-reverse;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 	text-align: center;
-	
 	margin: 0 auto;
-	
 }
 #about .col{
-	width: 500px;
-	height: 360px;
+	width: 100%;
+	padding: 30px;
 }
 #about .col-left {
-	width: 250px;
+	width: 50%;
 	height: 360px;
+	padding: 30px;
 }
 #about .col-right {
 	width: 100%;
+	padding: 40px;
 }
 #about .col-right h2 {
 	font-size: 2rem;
@@ -568,13 +570,17 @@ p {
 		height: 100%;
 	}
 /*--------------SECTION 3------------------*/
-
+	
 	#about .about {
 		flex-direction: row;
 	}
+	#about .col{
+		width: 100%;
+		padding: 30px;
+	}
 	#about .col-left {
-		width: 600px;
-		height: 400px;
+		display: block;
+		width: 40%;
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img::after {
